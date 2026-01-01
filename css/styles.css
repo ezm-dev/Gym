@@ -1,0 +1,451 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: #274c77;
+  
+}
+
+/* Header */
+header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #274c77;
+    color: #e7ecef;
+    padding: 10px 20px;
+
+}
+
+
+.main-nav {
+    list-style-type: none;
+    /* margin: 0;
+    padding: 0; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0px;
+    /* gap: 20px; */
+}
+
+/* .main-nav li {
+    position: relative;
+} */
+
+.main-nav li a {
+    text-decoration: none;
+    color: #e7ecef;
+
+}
+
+/* remove a from here and from :hover to let the hover on all li */
+.main-nav li a {
+
+
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+/* Menue hover animation */
+.main-nav li a:hover {
+    background-color: #a3cef1;
+    /*var(--accent-color); */
+    -webkit-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+    color: black;
+    border-radius: 5px;
+
+}
+
+/* Hide the checkbox by default */
+#menu-toggle {
+    display: none;
+}
+
+/*Hide burger Menu Icon */
+.burger-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #8b8c89;
+    color: #e7ecef;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+footer a {
+    color: white;
+}
+
+/* content */
+main {
+    padding: 20px;
+    /* background-color: #e7ecef; */
+    min-height: 80vh;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Hero Section */
+#hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+#hero img {
+    width: 100%;
+}
+
+.login{
+    display: grid;
+
+    justify-content: center;
+    align-content: center;
+    
+ }
+
+/* info section */
+.info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 5px;
+
+}
+
+/* about us section */
+.about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* flex-wrap: wrap; */
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: larger;
+    font-weight: bold;
+    /* text-wrap: wrap; */
+    gap: 75px;
+    /* text-align: center; */
+    padding: 10px;
+    background-color: #e7ecef;
+
+
+}
+
+/* article inside each section */
+article {
+    background-color: #e7ecef;
+    border: 1px solid #274c77;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+}
+
+article:hover {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+
+}
+
+.btn {
+    padding: 5px 15px;
+    background-color: #a3cef1;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    padding: 5px 15px;
+    background-color: #e0bc2bd2;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Register */
+form {
+    background-color: #e7ecef;
+    display: grid;
+    grid-template-columns: 1em 1fr 3fr;
+    justify-items: start;
+    gap: 10px;
+    padding: 15px;
+    font-size: 1.5em;
+    border-radius: 5px;
+
+}
+/* the direction of form and help */
+.register{
+    flex-direction: column;
+
+}
+
+
+input,
+select {
+    width: 80%;
+    font-size: 1em;
+    border: #6096ba 2px solid;
+
+}
+
+#newsletter {
+    width: auto;
+    -webkit-transform: scale(2);
+        -ms-transform: scale(2);
+            transform: scale(2);
+}
+
+input[type=submit] {
+    grid-column: 3/4;
+    /* background-color: #04AA6D;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px; */
+    cursor: pointer;
+}
+
+
+
+
+.error {
+    display: none;
+    color: red;
+    font-size: .8em;
+    grid-column: 1/4
+}
+
+
+/* video */
+.video-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.5em;
+    margin-top: 10px;
+  
+    /* justify-content: center; */
+
+}
+
+.help {
+    position: relative;
+    margin-top: 10px;
+    /* grid-column: 2/3; */
+   
+
+
+}
+
+.help a {
+    font-size: 1em;
+    color: #6096ba;
+
+
+}
+
+.help-video {
+    display: none;
+    /* position: relative;
+   */
+
+}
+
+.help a:hover+.help-video{
+    display: block;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    margin-top: 10px;
+    z-index: 100;
+    width: 300px;
+    height: auto;
+}
+
+
+/* Second Option for label(link) & checkbox if you want the video to stay*/
+#help2 #help-toggle{
+    display: none;
+    /* for assisitive technology */
+    /* width:0;
+    height: 0;
+    opacity:0; */
+}
+
+#help2 label{
+    text-decoration: underline;
+    color: blue;
+}
+
+
+#help2 #help-toggle:checked+.help-video{
+    display: block;
+   
+}
+
+
+/* Displaying error when input is invalid */
+input:user-invalid {
+    background-color: lightpink;
+
+}
+
+input:user-invalid+.error {
+    display: inline-block;
+}
+
+/* Required fields star(*) */
+.required:after {
+    content: " *";
+    color: red;
+}
+
+/********Responsive Design -Mobile *****/
+@media (max-width: 768px) {
+
+    form {
+        grid-template-columns: 1em 1fr;
+
+    }
+
+    input[type="submit"] {
+        grid-column: 1/3;
+
+    }
+
+    label {
+        display: none;
+    }
+
+    input,
+    select {
+        width: 100%;
+    }
+
+
+    .burger-menu {
+        display: block;
+    }
+
+
+
+    .main-nav {
+        display: none;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #274c77;
+
+    }
+
+    /* .main-nav.active {
+        display: flex;
+    } */
+
+    #menu-toggle:checked~.main-nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+
+    /* 4.Style the navigation links in mobile view */
+    .main-nav li {
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid #a3cef1;
+    }
+
+    .main-nav li:last-child {
+        border-bottom: none;
+    }
+
+
+    .error {
+        grid-column: 1/3
+    }
+    
+    aside  img{
+        width:100% ;
+        
+    }
+
+}
+
+
+/* about */
+@media (max-width: 835px) {
+
+    .about {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        gap: 50px;
+        
+
+    }
+      
+    aside  img{
+        width:100% ;
+        
+    }
+}

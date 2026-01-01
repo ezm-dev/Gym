@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/main.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header">
+    </div>
+
+    <!-- Content -->
+    <main class="login">
+        <h2>Login... Train like an athlete💪</h2>
+        <section class="info">
+            <form action="#" method="post">
+                <em class="icon">📧</em>
+                <label for="email" class="required">Email</label>
+                <input type="email" id="email" pattern="^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    title="Please enter a valid email address." required placeholder="Email">
+                <span class="error">Please enter a valid email address.</span>
+
+                <em class="icon">🔒</em>
+                <label for="password" class="required">Password</label>
+                <input type="password" id="password" minlength="8" title="Password must be at least 8 characters."
+                    required placeholder="Password">
+                <span class="error">Password must be at least 8 characters.</span>
+
+                <!-- submit -->
+                <input type="submit" value="Login" class="btn">
+            </form>
+
+
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <div id="footer">
+    </div>
+
+
+</body>
+
+</html>
